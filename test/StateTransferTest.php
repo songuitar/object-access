@@ -11,6 +11,9 @@ use Songuitar\Common\StateTransfer;
  */
 class StateTransferTest extends TestCase
 {
+    /**
+     * @return StateTransfer
+     */
     private function getStateTransfer(): StateTransfer
     {
         return new StateTransfer(new ReflectionAccessor());
