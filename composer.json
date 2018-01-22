@@ -1,5 +1,5 @@
 {
-    "name": "songuitar/common",
+    "name": "songuitar/object-access",
     "require-dev": {
         "phpunit/phpunit": "^6.5"
     },
