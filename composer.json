@@ -1,0 +1,12 @@
+{
+    "name": "songuitar/common",
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Songuitar\\Common\\": "src/",
+            "Songuitar\\Common\\Test\\": "test/"
+        }
+    }
+}
