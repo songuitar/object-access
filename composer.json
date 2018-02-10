@@ -9,5 +9,8 @@
             "Songuitar\\ObjectAccess\\": "src/",
             "Songuitar\\ObjectAccess\\Test\\": "test/"
         }
+    },
+    "require": {
+        "symfony/cache": "^4.0"
     }
 }

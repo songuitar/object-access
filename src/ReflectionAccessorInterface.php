@@ -25,10 +25,4 @@ interface ReflectionAccessorInterface
      */
     public function setValue($object, string $propertyName, $value): void;
 
-    /**
-     * @param \ReflectionClass $reflectionClass
-     *
-     * @return \ReflectionProperty[]
-     */
-    public function extractReflectionProperties(\ReflectionClass $reflectionClass): array;
 }

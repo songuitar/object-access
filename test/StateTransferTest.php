@@ -4,6 +4,7 @@ namespace Songuitar\ObjectAccess\Test;
 
 use PHPUnit\Framework\TestCase;
 use Songuitar\ObjectAccess\ReflectionAccessor;
+use Songuitar\ObjectAccess\ReflectionExtractor;
 use Songuitar\ObjectAccess\StateTransfer;
 
 /**
@@ -16,7 +17,7 @@ class StateTransferTest extends TestCase
      */
     private function getStateTransfer(): StateTransfer
     {
-        return new StateTransfer(new ReflectionAccessor());
+        return new StateTransfer(new ReflectionExtractor());
     }
 
     public function testIsTransferredSimpleCase()

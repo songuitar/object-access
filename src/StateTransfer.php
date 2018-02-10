@@ -20,17 +20,17 @@ class StateTransfer extends ResettableService implements StateTransferInterface
     private $includeFields = [];
 
     /**
-     * @var ReflectionAccessorInterface
+     * @var ReflectionExtractorInterface
      */
-    private $reflectionAccessor;
+    private $reflectionExtractor;
 
     /**
      * StateTransfer constructor.
-     * @param ReflectionAccessorInterface $reflectionAccessor
+     * @param ReflectionExtractorInterface $reflectionAccessor
      */
-    public function __construct(ReflectionAccessorInterface $reflectionAccessor)
+    public function __construct(ReflectionExtractorInterface $reflectionAccessor)
     {
-        $this->reflectionAccessor = $reflectionAccessor;
+        $this->reflectionExtractor = $reflectionAccessor;
         parent::__construct();
     }
 
@@ -46,8 +46,8 @@ class StateTransfer extends ResettableService implements StateTransferInterface
             throw new \InvalidArgumentException('can\'t operate non-object values');
         }
 
-        $fromProperties = $this->reflectionAccessor->extractReflectionProperties(new \ReflectionClass($from));
-        $toProperties = $this->reflectionAccessor->extractReflectionProperties(new \ReflectionClass($to));
+        $fromProperties = $this->reflectionExtractor->extractReflectionProperties(new \ReflectionClass($from));
+        $toProperties = $this->reflectionExtractor->extractReflectionProperties(new \ReflectionClass($to));
 
         foreach ($fromProperties as $fromProperty) {
             if ($this->getIncludeFields() && !\in_array($fromProperty->getName(), $this->getIncludeFields(), true)) {
