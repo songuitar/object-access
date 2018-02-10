@@ -6,8 +6,8 @@
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Songuitar\\Common\\": "src/",
-            "Songuitar\\Common\\Test\\": "test/"
+            "Songuitar\\ObjectAccess\\": "src/",
+            "Songuitar\\ObjectAccess\\Test\\": "test/"
         }
     }
 }

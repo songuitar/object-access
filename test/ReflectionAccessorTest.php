@@ -1,11 +1,11 @@
 <?php
 
-namespace Songuitar\Common\Test;
+namespace Songuitar\ObjectAccess\Test;
 
 use PHPUnit\Framework\TestCase;
-use Songuitar\Common\ReflectionAccessor;
-use Songuitar\Common\Test\Fixture\Entity;
-use Songuitar\Common\Test\Fixture\EntitySuperClass;
+use Songuitar\ObjectAccess\ReflectionAccessor;
+use Songuitar\ObjectAccess\Test\Fixture\Entity;
+use Songuitar\ObjectAccess\Test\Fixture\EntitySuperClass;
 
 class ReflectionAccessorTest extends TestCase
 {

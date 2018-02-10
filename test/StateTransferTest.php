@@ -1,10 +1,10 @@
 <?php
 
-namespace Songuitar\Common\Test;
+namespace Songuitar\ObjectAccess\Test;
 
 use PHPUnit\Framework\TestCase;
-use Songuitar\Common\ReflectionAccessor;
-use Songuitar\Common\StateTransfer;
+use Songuitar\ObjectAccess\ReflectionAccessor;
+use Songuitar\ObjectAccess\StateTransfer;
 
 /**
  * @coversNothing

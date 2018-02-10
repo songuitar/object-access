@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: alexey
- * Date: 22.01.18
- * Time: 16:27
- */
 
-namespace Songuitar\Common\Test\Fixture;
+namespace Songuitar\ObjectAccess\Test\Fixture;
 
 
 abstract class EntitySuperClass

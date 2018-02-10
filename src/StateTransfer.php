@@ -1,6 +1,6 @@
 <?php
 
-namespace Songuitar\Common;
+namespace Songuitar\ObjectAccess;
 
 /**
  * Class StateTransfer.

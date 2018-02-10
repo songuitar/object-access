@@ -1,6 +1,6 @@
 <?php
 
-namespace Songuitar\Common\Test\Fixture;
+namespace Songuitar\ObjectAccess\Test\Fixture;
 
 class Entity extends EntitySuperClass
 {
